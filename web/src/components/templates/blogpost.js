@@ -9,7 +9,7 @@ import { graphql } from "gatsby"
 
 const QUERY = graphql`
   query Blogpost($id: String!) {
-    page: sanityCorepage(_id: { eq: $id }) {
+    page: sanityBlogpost(_id: { eq: $id }) {
       title
       
       # seo {
