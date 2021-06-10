@@ -3,7 +3,7 @@ const path = require(`path`)
 async function createCorePages(graphql, actions) {
   const { createPage } = actions
 
-  let template = path.resolve("./src/components/templates/corepage/index.js")
+  let template = path.resolve("./src/components/templates/corepage.js")
   let query = require("./src/qry/corepages.js")
   let result = await graphql(query)
   result.data.allSanityCorepage.nodes.forEach(page => {
@@ -29,7 +29,7 @@ async function createCorePages(graphql, actions) {
 async function createLandingpages(graphql, actions) {
   const { createPage } = actions
 
-  let template = path.resolve("./src/components/templates/corepage/index.js")
+  let template = path.resolve("./src/components/templates/landingpage.js")
   let query = require("./src/qry/landingpages.js")
   let result = await graphql(query)
   result.data.allSanityLandingpage.nodes.forEach(page => {
@@ -55,7 +55,7 @@ async function createLandingpages(graphql, actions) {
 async function createBlogposts(graphql, actions) {
   const { createPage } = actions
 
-  let template = path.resolve("./src/components/templates/corepage/index.js")
+  let template = path.resolve("./src/components/templates/blogpost.js")
   let query = require("./src/qry/blogposts.js")
   let result = await graphql(query)
   result.data.allSanityBlogpost.nodes.forEach(page => {
