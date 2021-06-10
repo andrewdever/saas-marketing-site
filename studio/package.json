@@ -7,7 +7,7 @@
   "author": "andrewdever",
   "license": "MIT",
   "scripts": {
-    "deploy-graph": "sanity graphql deploy --no-playground",
+    "graphql-deploy": "sanity graphql deploy --playground",
     "dev": "sanity graphql deploy --playground && sanity start",
     "start": "sanity start",
     "build": "sanity build",
