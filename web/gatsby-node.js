@@ -6,14 +6,14 @@ async function createCorePages(graphql, actions) {
   let template = path.resolve("./src/components/templates/corepage/index.js")
   let query = require("./src/qry/corepage.js")
   let result = await graphql(query)
-  result.data.allSanityPageCore.nodes.forEach(page => {
+  result.data.allSanityCorepage.nodes.forEach(page => {
     let path = `/`
     if (page.slug !== null) {
       path = page.slug.current
     }
 
     if (page.parentSlug !== null) {
-      path = page.parentSlug.current + `/` + page.slug.current
+      path = page.parentSlug + `/` + page.slug.current
     }
 
     createPage({

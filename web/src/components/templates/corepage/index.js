@@ -11,7 +11,7 @@ const QUERY = graphql`
   query Page($id: String!) {
     page: sanityCorepage(_id: { eq: $id }) {
       title
-
+      
       # seo {
       #     htmlTitle
       #     metaDescription
