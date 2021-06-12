@@ -17,7 +17,26 @@
         "projectId": "rmixtpha",
         "dataset": "development",
         "default": true
-      }
+      },
+      "__experimental_spaces": [
+        {
+          "name": "production",
+          "title": "Live Site",
+          "api": {
+            "projectId": "rmixtpha",
+            "dataset": "production"
+          }
+        },
+        {
+          "name": "development",
+          "title": "Staging",
+          "default": true,
+          "api": {
+            "projectId": "rmixtpha",
+            "dataset": "development"
+          }
+        }
+      ]
     },
     "production": {
       "api": {
@@ -26,25 +45,6 @@
       }
     }
   },
-  "__experimental_spaces": [
-    {
-      "name": "production",
-      "title": "Production Dataset",
-      "api": {
-        "projectId": "rmixtpha",
-        "dataset": "production"
-      }
-    },
-    {
-      "name": "development",
-      "title": "Development Dataset",
-      "default": true,
-      "api": {
-        "projectId": "rmixtpha",
-        "dataset": "development"
-      }
-    }
-  ],
   "parts": [
     {
       "name": "part:@sanity/base/schema",
