@@ -15,16 +15,36 @@
     "development": {
       "api": {
         "projectId": "rmixtpha",
-        "dataset": "production"
+        "dataset": "development",
+        "default": true
       }
     },
     "production": {
       "api": {
         "projectId": "rmixtpha",
-        "dataset": "development"
+        "dataset": "production"
       }
     }
   },
+  "__experimental_spaces": [
+    {
+      "name": "production",
+      "title": "Production Dataset",
+      "api": {
+        "projectId": "rmixtpha",
+        "dataset": "production"
+      }
+    },
+    {
+      "name": "development",
+      "title": "Development Dataset",
+      "default": true,
+      "api": {
+        "projectId": "rmixtpha",
+        "dataset": "development"
+      }
+    }
+  ],
   "parts": [
     {
       "name": "part:@sanity/base/schema",

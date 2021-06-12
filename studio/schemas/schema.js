@@ -7,6 +7,8 @@ import corepage from './page/corepage'
 import blogpost from './page/blogpost'
 import landingpage from './page/landingpage'
 
+import author from './author'
+
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
@@ -14,5 +16,7 @@ export default createSchema({
     corepage,
     blogpost,
     landingpage,
+
+    author,
   ]),
 })

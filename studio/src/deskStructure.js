@@ -59,6 +59,11 @@ export const getDefaultDocumentNode = (props) => {
           .child(S.documentTypeList("corepage").title("Core Pages")),
         S.divider(),
         S.listItem()
+          .title("Authors")
+          .icon(VscFile)
+          .schemaType("author")
+          .child(S.documentTypeList("author").title("Authors")),
+        S.listItem()
         .title("Site Settings")
         .icon(VscSettingsGear)
         .child(
