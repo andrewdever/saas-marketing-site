@@ -9,7 +9,8 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "intl-input"
+    "intl-input",
+    "tabs"
   ],
   "env": {
     "development": {

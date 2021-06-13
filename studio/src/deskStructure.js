@@ -54,15 +54,30 @@ export const getDefaultDocumentNode = (props) => {
         S.divider(),
         S.listItem()
           .title("Core Pages")
-          .icon(VscFile)
+          .icon(VscPreview)
           .schemaType("corepage")
           .child(S.documentTypeList("corepage").title("Core Pages")),
-        S.divider(),
+        S.listItem()
+          .title("Forms")
+          .icon(VscGithubAction)
+          .schemaType("form")
+          .child(S.documentTypeList("form").title("Forms")),
+        S.listItem()
+          .title("Categories")
+          .icon(VscGroupByRefType)
+          .schemaType("category")
+          .child(S.documentTypeList("category").title("Categories")),
         S.listItem()
           .title("Authors")
-          .icon(VscFile)
+          .icon(VscAccount)
           .schemaType("author")
           .child(S.documentTypeList("author").title("Authors")),
+        S.listItem()
+          .title("Languages")
+          .icon(VscAccount)
+          .schemaType("language")
+          .child(S.documentTypeList("language").title("Languages")),
+        S.divider(),
         S.listItem()
         .title("Site Settings")
         .icon(VscSettingsGear)

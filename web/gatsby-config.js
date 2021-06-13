@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-webpack-bundle-analyzer`,
     `gatsby-plugin-preact`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-head`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

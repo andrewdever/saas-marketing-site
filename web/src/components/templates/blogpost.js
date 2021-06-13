@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Head from '../head'
+
 const QUERY = graphql`
   query Blogpost($id: String!) {
     page: sanityBlogpost(_id: { eq: $id }) {
@@ -14,6 +16,7 @@ const Template = props => {
 
   return (
     <React.StrictMode>
+      <Head />
       <h1>{page.title}</h1>
     </React.StrictMode>
   )

@@ -63,6 +63,9 @@ Run ```sanity --help``` for a list of commands.
 
 This project is powered by Netlify, which hosts both the CMS and Site.
 
+Before deploying make sure you have deployed Sanity graphql to production dataset by running
+```bash npm run graphql-deploy``` or ```sanity graphql deploy --dataset production --no-playground```
+
 1. cd into the root project directory i.e. `/saas-marketing-site`
 2. Run ```bash git push origin master```
 3. Check the Netlify Deploy logs via Netlify CLI or GUI.
